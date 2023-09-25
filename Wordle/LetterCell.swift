@@ -50,23 +50,31 @@ class LetterCell: UICollectionViewCell {
    */
   func set(style: LetterCellStyle) {
     // START YOUR CODE HERE
-    let borderColor = UIColor.gray.cgColor
-    let backgroundColor: UIColor
+      let borderColor: UIColor = .gray
+          var backgroundColor: UIColor = .clear
 
-    switch style {
-    case .initial:
-        backgroundColor = .black
-    case .incorrect:
-        backgroundColor = UIColor(red: 0.23, green: 0.23, blue: 0.24, alpha: 1.0)
-    case .correctLetterOnly:
-        backgroundColor = UIColor(red: 0.69, green: 0.63, blue: 0.30, alpha: 1.0)
-    case .correctLetterAndPosition:
-        backgroundColor = UIColor(red: 0.38, green: 0.55, blue: 0.33, alpha: 1.0)
-    }
+          switch style {
+          case .initial:
+              backgroundColor = .black
+          case .incorrect:
+              backgroundColor = UIColor(red: 0.23, green: 0.23, blue: 0.24, alpha: 1.0)
+          case .correctLetterOnly:
+              backgroundColor = UIColor(red: 0.69, green: 0.63, blue: 0.30, alpha: 1.0)
+          case .correctLetterAndPosition:
+              backgroundColor = UIColor(red: 0.38, green: 0.55, blue: 0.33, alpha: 1.0)
+          }
 
-    contentView.backgroundColor = backgroundColor
-    layer.borderColor = borderColor
+          contentView.backgroundColor = backgroundColor
+          layer.borderColor = borderColor.cgColor
 
+          // Check if the letter is not in the puzzle word and set the text color to gray
+          if style != .initial && style != .correctLetterOnly && style != .correctLetterAndPosition {
+              letterLabel.textColor = .gray
+          } else {
+              letterLabel.textColor = .black
+          }
     // END YOUR CODE HERE
   }
 }
+
+// For my update I wanted the letter to be greyed out if it was not used in the puzzle
