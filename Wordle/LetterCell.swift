@@ -66,7 +66,7 @@ class LetterCell: UICollectionViewCell {
 
     contentView.backgroundColor = backgroundColor
     layer.borderColor = borderColor
-}
+
     // END YOUR CODE HERE
   }
 }
