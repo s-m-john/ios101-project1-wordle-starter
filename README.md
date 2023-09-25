@@ -5,7 +5,7 @@ Submitted by: **Sophia John**
 
 **Name of your app** is an app that ... [TODO] 
 
-Time spent: 6*** hours spent in total
+Time spent: 7*** hours spent in total
 
 ## Required Features
 
@@ -26,6 +26,14 @@ The following **additional** features are implemented:
       When guessing letters if the enterd letter is not present it will grey out.
 
 ## Video Walkthrough
+
+<div>
+    <a href="https://www.loom.com/share/b834e99274364e82b22918f33d3c3037">
+    </a>
+    <a href="https://www.loom.com/share/b834e99274364e82b22918f33d3c3037">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/b834e99274364e82b22918f33d3c3037-with-play.gif">
+    </a>
+  </div>
 
 Here is a reminder on how to embed Loom videos on GitHub. Feel free to remove this reminder once you upload your README. 
 
